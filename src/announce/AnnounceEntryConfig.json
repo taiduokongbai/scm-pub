@@ -1,0 +1,5 @@
+{
+    "title": "公告详情",
+    "filename": "announce.html",
+    "template": "./src/template/baiduMap.html"
+}

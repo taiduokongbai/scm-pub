@@ -1,0 +1,24 @@
+.baseData-content{
+  .ant-table-fixed {
+    .ant-table-thead > tr > th:first-child {
+      padding-left: 0;
+    }
+    .ant-table-tbody > tr > td:first-child {
+      padding-left: 0;
+    }
+  }
+
+.operate{
+  text-align: center;
+}
+  .three-line{
+    .one-line{
+      margin: 0 10px;
+    }
+  }
+.double-line{
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+}

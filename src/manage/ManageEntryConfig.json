@@ -1,0 +1,5 @@
+{
+    "title": "后台管理",
+    "filename": "manage.html",
+    "template": "./src/template/baiduMap.html"
+}

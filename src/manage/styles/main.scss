@@ -1,0 +1,344 @@
+@import "./sidebar.scss";
+@import "./Announce.scss";
+@import "./terraceRule.scss";
+@import "../tenant/tenant.scss";
+@import "../PlatCategory/PlatCategory.scss";
+$borderColor:#D3D3D3;
+$sideBarColor:#4b4b4b;
+
+.ant-layout-sider-collapsed{
+
+  .menu-root-one{
+
+    i.anticon,.c2mfont{
+      margin-right: 100px;
+    }
+  }
+
+}
+
+
+
+
+.ant-layout-sider{
+    background:#fff;
+    
+  .ant-layout-sider-children{
+      
+      >ul{
+          padding-top:49px;
+          .ant-menu-submenu{
+              .ant-menu-submenu-title{
+                  white-space:normal;
+              }
+            .ant-menu-item{
+                >a:before{
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    left: 29px;
+                    top: 19px;
+                    border-radius: 6px;
+                    border: 1px solid #9b9b9b;
+                }
+            }
+            .ant-menu-item-selected{
+                >a:before{
+                    border: 1px solid #4990e2;
+                    background: #4990e2;
+                }
+            }
+          }
+      }
+  }
+
+  
+
+  .ant-layout-sider-trigger {
+        position: absolute;
+        z-index: 9;
+        bottom: auto;
+        top: 0px;
+        background: #FFFFFF;
+        color: #333;
+        border-bottom: solid 1px #F2F2F2;
+        height: 49px;
+        line-height: 49px;
+        position: absolute;
+    }
+}
+
+
+.ew-layout{
+    background:#e7e8ea;
+    .manage-content {
+        .manage-breadcrumb {
+            padding: 5px 0;
+        }
+
+        .managetitle{
+            .manage-box{
+                .managehead {
+                    padding: 20px 0;
+                    .ant-select-selection{
+                        height:30px;
+                    }
+                    .ant-input-affix-wrapper{
+                        height:30px;
+                    }
+                    .manage-addBtn{
+                        float:right;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+.ant-modal{
+   .ant-modal-content{
+       .ant-modal-body {
+         padding: 14px 47px 0px 42px;
+         .company-code{
+             display: none;
+         }
+         .address-form{
+             .ant-row{
+                .ant-form-item-control{
+                    width:442px;
+                }
+                
+             }
+             .map{
+                 .has-success{
+                     width:663px;
+                 }
+             }
+         }
+         .select-ganged {
+                .ant-select {
+                    margin-right: 8px;
+                }
+            }
+            
+           .ant-row{
+             margin:0 0 7px 0;
+             
+             .ant-form-item-control {
+               //width: 200px;
+                 textarea{
+                     height: auto;
+                     resize: none;
+                 }
+
+             }
+             
+             .company-phone,.company-contacts{
+                 position:relative;
+                    .company-phoneN{
+                        position: absolute;
+                        top: 0;
+                        right: 49px;
+                    }
+                    .contacts-phone{
+                        position: absolute;
+                        top: 0;
+                        right: -241px;
+                    }
+                    .company-phoneN{
+                        .ant-form-item-control {
+                            width:110px;
+                        }
+                    }
+             }
+             
+             .company-desc,.company-logo{
+                 .ant-form-item-control{
+                   width:619px;
+                 }
+             }
+             
+             
+             .industry-box{
+                 .ant-select{
+                   width: 619px !important;
+                 }
+             }
+
+           }
+           .tenantDesc{
+                .ant-form-item-control {
+                    width: 483px;
+                }
+            }
+       }
+   }
+
+
+}
+
+.sidebar-con{
+    font-size:12px;
+    color:$sideBarColor;
+    .side-box{
+        height:54px;
+
+        .side-title{
+            border-bottom:1px solid #e2e2e2;
+            b{
+                padding:16px 0 17px 16px;
+                display: inline-block;
+                font-family:PingFangSC-Semibold;
+                color:#4a4a4a;
+                font-size: 14px;
+            }
+            
+            .side-button{
+                text-align:right;
+                height: 54px;
+                line-height: 54px;
+            }
+            .x-icon{
+                float: right;
+                height: 54px;
+                width: 44px;
+                line-height: 54px;
+                text-align: center;
+                background:#d6d6d6;
+                margin-left:6px;
+              a{
+                display:inline-block;
+                width:100%;
+                height:100%;
+                 -webkit-transition: 0.4s;
+                -webkit-transition: -webkit-transform 0.4s ease-out;
+                transition: transform 0.4s ease-out;
+                -moz-transition: -moz-transform 0.4s ease-out;
+                i:before{
+                    color:#fff;
+                }
+              }
+             a:hover{
+                    transform: rotateZ(90deg);
+                    -webkit-transform: rotateZ(90deg);
+                    -moz-transform: rotateZ(90deg);
+             }
+            }
+        }
+    }
+
+    .company-logo{
+        height:100px;
+        margin:20px 0 20px 20px;
+        img{
+          width:200px;
+          height:100px;
+          background: #ccc;
+          margin-left:30px;
+        }
+    }
+    .company-list{
+        ul{
+            >li{
+                margin-bottom:8px;
+                overflow: hidden;
+                zoom:1;
+                div{
+                    padding-left:50px;
+                    font-weight: bold;
+                    font-size:14px;
+                    margin-bottom:8px;
+
+                }
+                ol{
+                    overflow: hidden;
+                    padding-left:50px;
+                    li{
+                        float: left;
+                    }
+                }
+                >span{
+                    width:105px;
+                    display:inline-block;
+                    text-align: right;
+                    color:#9b9b9b;
+                    float: left;
+                }
+                b{
+                    padding-left:10px;
+                    display: inline-block;
+                    width:500px;
+                    float: left;
+                    font-weight: normal;
+                    
+                }
+                .pwd{
+                    color:#737373;
+                    font-size:12px;
+                }
+            }
+        }
+
+    }
+    .tenantbase-list{
+        font-size:12px;
+        padding-left:16px;
+        ul{
+            >li{
+                >span{
+                    width:90px;
+                    color:#9b9b9b;
+                    display: inline-block;
+                    float:left;
+                }  
+            }
+        }
+    }
+
+
+}
+
+
+    .map {
+        height: 372px;
+        .ant-form-item-control-wrapper,
+        .ant-form-item-control,
+        #map {
+            height: 100%;
+        }
+    }
+    .header-toolbar{
+        .header-toolbar-logo-text{
+            .header-logo-box{
+                background-color: #4C80CF;
+                border-bottom: 0;
+                line-height: 0;
+            }
+            .header-logo{
+                font-size: 14px;
+                font-weight: 100;
+                color:#fff;
+                height:37px;
+                line-height: 37px;
+                position: relative;
+                i{
+                    font-size: 20px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .header-toolbar-right{
+            color: #fff;
+            a{
+                color: #fff;
+                i{
+                    font-size: 12px;
+                }
+            }
+
+        }
+    }

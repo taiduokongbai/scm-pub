@@ -1,0 +1,19 @@
+.main-entry{
+  padding: 50px;
+  margin:0 auto;
+  .icon-wrap{
+    width: 13%;
+    height: 180px;
+    display: inline-block;
+    vertical-align:middle;
+    text-align:center;
+  }
+  .icon{
+    cursor:pointer;
+    font-size: 40px;
+    color: #C3C3C3;
+  }
+  .icon:hover {color: #4C80CF; }
+
+
+}

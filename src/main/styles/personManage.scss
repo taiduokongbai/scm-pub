@@ -1,0 +1,92 @@
+.manage-box{
+  .person-manage-top{
+    // background: #404040;
+    // padding: 0 50px;
+    // height: 64px;
+    // line-height: 64px;
+  }
+  .person-manage-bottom{
+    display: flex;
+    .person-manger-left{
+      flex: 0 0 200px;
+      width:198px;
+      margin-left: 19px;
+      margin-right: 19px;
+      background:#ffffff;
+      border:1px solid #e1e1e1;
+      .person-manger-comp{
+        display: flex;
+        width: 200px;
+        flex-direction: column;
+        li{
+          display: flex;
+          padding: 14px 0 14px 33px;
+          color:#777;
+          font-size:12px;
+        }
+        li:first-child{
+          border-bottom:1px solid #e1e1e1;
+          &.active{
+            color:#4c80cf;
+            background:rgba(174,203,237,0.30)
+          }
+        }
+        li:first-child:hover{
+          cursor: pointer;
+          color: #777;
+          background:rgba(174,203,237,0.30)
+        }
+        li:last-child{
+          padding-bottom: 0;
+        }
+      }
+      .org-tree-comp{
+        margin-left: 10px;
+        &.active{
+          .draggable-tree{
+              overflow: hidden;
+          }
+          .draggable-tree .ant-tree-node-content-wrapper {
+            width: calc(100% - 18px);
+          }
+          .ant-tree-node-selected{
+            .tree-node{
+              background-color:rgb(210, 234, 251) !important;
+              .name{
+                color:#4c80cf;
+              }
+            }
+          }
+        }
+        .ant-tree-node-selected{
+          background-color: #fff;
+          .tree-node{
+            background-color: #fff !important;
+          }
+        }
+        .tree-node{
+          padding: 4px 0;
+          .name{
+            max-width: 80px;
+            display:inline-block;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-right: 9px;
+          }
+          .icon{
+            position: relative;
+            bottom:4px;
+            color:#4c80cf;
+          }
+        }
+      }
+    }
+    .person-manger-right{
+      -webkit-box-flex: 1;
+      -webkit-flex: auto;
+      -ms-flex: auto;
+      flex: auto;
+    }
+  }
+}

@@ -1,0 +1,252 @@
+.ant-avatar {
+    display: inline-block;
+    text-align: center;
+    background: #ccc;
+    color: #fff;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 16px;
+}
+.ant-avatar-lg {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+}
+.ant-avatar.ant-avatar-icon {
+    font-size: 18px;
+}
+.ant-avatar-lg.ant-avatar-icon {
+    font-size: 24px;
+}
+.ant-avatar-lg > * {
+    line-height: 40px;
+}
+.ant-avatar > img {
+    width: 100%;
+    height: 100%;
+}
+.approve-page{
+    margin-top: -40px;
+}
+.approve-forme{
+    height: 750px;
+    padding: 0px 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    &-row{
+        background-color: #f4f4f4;
+        padding: 18px 20px;
+        margin-bottom: 6px;
+        cursor: pointer;
+    }
+}
+.oa-preview-form{
+    .ant-form-item {
+        margin-bottom: 16px;
+    }
+    .ant-form-text{
+        word-break: break-all;
+    }
+    .ant-input-group > .ant-input:first-child, .ant-input-group-addon:first-child{
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+    .ant-input-group-addon{
+        background: rgba(0, 0, 0, 0);
+        border: none;
+    }
+    .oa-preview{
+        
+        .oa-row-title{
+            padding: 2px 0px 2px 10px;
+            border-bottom: solid 1px #e8e8e8;
+            margin-bottom: 18px;
+            position: relative;
+            >span{
+                font-weight: bold;
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    width: 3px;
+                    height: 15px;
+                    left: 0px;
+                    top: 4px;
+                    background-color: #fe7a10;
+                }
+            }
+        }
+        .ant-table-tbody>tr>td {
+            border-bottom: 1px solid #e9e9e9;
+            padding: 12px 10px;
+            line-height: initial;
+            height: auto;
+        }
+        .ant-table-tbody > tr:nth-child(even){
+            background-color: #FFFFFF;
+        }
+        .ant-table-thead > tr > th{
+            background-color: #f6f3f2;
+            padding: 12px 10px;
+            line-height: initial;
+            height: auto;
+            >span{
+                white-space: nowrap;  /*强制span不换行*/
+            }
+        }
+        .ant-table-thead > tr > th:not(.ant-table-selection-column):before{
+            display: none;
+        }
+    }
+    .oa-preview-read{
+        .ant-form-item {
+            margin-bottom: 5px;
+        }
+        .preview-tag{
+            padding: 0px 10px;
+            background-color: #eff4ff;
+            border: 1px solid #c8e2ff;
+            line-height: 24px;
+            height: 26px;
+        }
+    }
+}
+.sidebar-approve{
+    .menu-wrap{
+        width: 700px;
+        -webkit-transform: translate3d(700px, 0, 0);
+        transform: translate3d(700px, 0, 0);
+        
+    }
+    .lg-font{font-size: 14px;}
+    .approve-detail{
+        position: relative;
+        color:#4b4b4b;
+        .btn-back{
+            background-color:#4C80CF;
+        }
+        .person-info{
+            >span{vertical-align: middle;}
+        }
+        &-head{
+            padding: 10px 66px 10px 0px;
+            margin-left: 35px;
+            border-bottom: solid 1px #e8e8e8;
+            .form-name{
+                font-size:14px;
+            }
+        }
+        &-head-nobtn{
+            padding-top: 13px;
+            padding-bottom: 13px;
+        }
+        &-close{
+            position: absolute;
+            right: 0px;
+            top:0px;
+            padding: 15px 13px;
+            background-color:#d6d6d6;
+            i{
+                font-size: 14px;
+                color:#FFF;
+            }
+        }
+        &-top{
+            background: #fcf0de;
+            width: 100%;
+            padding: 8px 15px;
+        }
+        &-opinion{
+            padding: 18px 35px 8px 35px;
+            .ant-form-item{
+                margin-bottom: 6px;
+            }
+            .ant-form-item-with-help{
+                margin-bottom: 0px;
+            }
+            &-btns{
+                text-align: right;
+                .ant-btn{
+                    padding: 0 12px;
+                    height: 24px;
+                }
+                .ant-btn-primary{
+                    background-color:#5cb85c;
+                }
+            }
+        }
+        &-form{
+            padding: 35px;
+            .ant-timeline-item-content{
+                top:-5px;
+            }
+            .person-row{
+                border-bottom: dashed 1px #e8e8e8;
+            }
+            .person-avatar{
+                float: left;
+                height: 32px;
+            }
+            .person-info{
+                font-size:14px;
+                padding-left: 42px;
+                >p
+                { 
+                    min-height: 10px;
+                    padding: 5px;
+                }
+            }
+            .person-name{
+                color:#ff9948;
+            }
+            .orderdetail-row{
+                padding: 3px 10px;
+                background-color:#f3f9ff;
+                margin-top: 5px;
+                margin-bottom: 15px;
+                >a{
+                    font-size: 14px;
+                    color:#4c80cf;
+                }
+            }
+        }
+        &-line{
+            border: none;
+            border-bottom: 8px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.14);
+        }
+        &-proposer{
+            padding: 30px 35px 0px 35px;
+            .ant-avatar{
+                vertical-align: middle;
+            }
+            .proposer-name{
+                font-size:14px;
+                margin-left: 5px;
+                vertical-align: middle;
+            }
+        }
+        &-timeline{
+            padding: 10px 0px 20px 10px;
+            .ant-timeline-item-tail{
+                left: 4px;
+                border-left: 1px solid #c8e2ff;
+            }
+            .ant-timeline-item-head{
+                width: 10px;
+                height: 10px;
+            }
+        }
+       
+    }
+}
+.orderdetail-modal{
+    .ant-modal-content .ant-modal-body{
+        padding: 10px 20px;
+    }
+}

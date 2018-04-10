@@ -1,0 +1,115 @@
+.reset-wrapper{
+    background-color: #f8f8f8;
+    margin-top: 70px;
+    padding: 50px 0;
+    height: 626px;
+    .reset-box{
+        width: 662px;
+        background: #fff;
+        border:1px solid #e5e8ec;
+        border-radius: 3px;
+        margin: 0 auto;
+        .reset-text{
+            margin: 0 auto;
+            width: 260px;
+            .reset-title{
+                font-size: 16px;
+                text-align: center;
+                color:#080404;
+                margin-top:40px;
+                margin-bottom: 16px;
+                display: block;
+            }
+            .reset-list{
+                height: 28px;
+                width: 196px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .reset-circle{
+                    display: inline-block;
+                    height: 28px;
+                    width: 28px;
+                    border-radius: 50%;
+                    background-color:#fff;
+                    border: 1px solid #1b9ea2;
+                }
+                .circle-show{
+                    background-color:#27d1d6;
+                }
+                .reset-line{
+                    display: inline-block;
+                    background-color:#27d1d6;
+                    height: 2px;
+                    width: 100px;
+                    margin-top: 13px;
+                }
+            }
+            .acount-message{
+                display: flex;
+                justify-content: center;
+                font-size:14px;
+                color:#080404;
+                margin-bottom: 46px;
+                margin-top: 13px;
+                .acount-text{
+                   display: inline-block;
+                   width: 50%;
+                   margin-left: 18px;
+                }
+                .acount-text2{
+                    display: inline-block;
+                   width: 50%;
+                   margin-left: 96px;
+                }
+            }
+            .reset-form{
+                margin-bottom:50px;
+                .acount-phone,.reset-form-button{
+                    width:260px;
+                    box-sizing: border-box;
+                    height: 34px;
+                    border-radius: 3px;
+                    color:#b4b4b4;
+                    font-size: 14px;
+                    outline: none;
+                }
+                .c2m-forgot-phone,.c2m-forgot-test{
+                    color: #1b9ea2;
+                    font-size: 19px;
+                    position: absolute;
+                    top: 2px;
+                }
+                .ant-input-affix-wrapper .ant-input:not(:first-child){
+                    padding-left: 30px;
+                }
+                .inpt-code{
+                    height: 34px;
+                    font-size: 14px;
+                    color: #b4b4b4;
+                }
+                .form-btn-v{
+                    padding: 6.5px 14px;
+                    background-color: #ffb933;
+                    color: #fff;
+                    font-size: 14px;
+                    border: none; 
+                    line-height: 16px
+                }
+                .reset-form-button{
+                    background-color:#2ab0b4;
+                    border: none;
+                    color: #fff;
+                    padding-left: 15px;
+                }
+                .reset-form-button[disabled]{
+                    background-color:#eae7e7;
+                    border: none;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

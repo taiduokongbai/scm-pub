@@ -1,0 +1,30 @@
+
+.announcement-content{
+  margin-top: -40px;
+  .announcement-title{
+    height: 30px;
+    width: 100%;
+    border-bottom:1px solid  #ccc
+  }
+  .announcement-scroll{
+    height: 750px;
+    overflow-y: scroll;
+    padding-top: 20px;
+    .announcement-list{
+      .announcement-row{
+        background-color: #f4f4f4;
+        padding: 18px 20px;
+        margin-bottom: 6px;
+        .notice-title{
+          color: #777777;;
+          &:hover{
+            color: #00c4ff;
+            cursor: pointer;
+            text-decoration:underline;
+          }
+        }
+      }
+    }
+  }
+
+}

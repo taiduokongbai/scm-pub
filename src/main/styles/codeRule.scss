@@ -1,0 +1,50 @@
+.ew-layout-content {
+    .codeRule-content {
+        margin-top: 25px;
+        .ant-tabs-bar {
+            .ant-tabs-nav {
+                .ant-tabs-tab {
+                    margin: 0px !important;
+                    background: #fff;
+                }
+                .ant-tabs-tab-active {
+                    background: #4C80CF;
+                }
+            }
+        }
+        .ant-table-body {
+            .ant-table-thead>tr>th.handleCenter {
+                padding-right: 10px;
+            }
+            .handleCenter {
+                text-align: center
+            }
+            .columns-distribute {
+                cursor: pointer;
+                text-align: center;
+                border: 1px solid #9a9a9a;
+                border-radius: 100%;
+                color: #4a4a4a;
+            }
+            .columns-distribute:hover {
+                background-color: #4c80cf;
+                color: #fff;
+                border: 1px solid #4c80cf;
+            }
+        }
+    }
+}
+
+.check {
+    position: absolute;
+    margin: 5px;
+    left: 240px;
+    top: 0px;
+    width: 105px;
+}
+
+.code-rule-modal {
+    .ant-form-item {
+        margin-bottom: 12px;
+    }
+}

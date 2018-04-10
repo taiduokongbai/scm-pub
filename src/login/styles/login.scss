@@ -1,0 +1,172 @@
+.login-box{
+    overflow: hidden;
+    .login-wrapper{
+        background-image:url(../images/background.png);
+        background-repeat: no-repeat;
+        overflow: hidden;
+        margin-top: 70px;
+        height: 630px;
+        padding: 70px 0;
+        .login-content{
+            margin-left: 50%;
+            width: 420px;
+            background: rgba(255,255,255,.65);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+            .login-title{
+                font-size: 20px;
+                text-align: center;
+                color:#303445;
+                padding: 15px 0;
+                border-bottom: 2px solid #2ab0b4;
+                margin-bottom: 35px;
+                display: block;
+            }
+            .company-empty-title{
+                font-weight: 100;
+                font-size: 16px;
+                text-align: center;
+                color:#303445;
+                padding: 15px 0;
+                padding-bottom: 5px;
+                position: relative;
+                .anticon-exclamation-circle:before {
+                    color: #f39c12;
+                    left: 92px;
+                    position: absolute;
+                    top: 21px;
+                }
+            }
+            .company-empty-text{
+                font-size: 12px;
+                color: #999;
+                text-align: center;
+            }
+            .company-img{
+                width: 166px;
+                margin: 0 auto;
+                margin-top: 36px;
+                margin-bottom: 29px;
+                display: block;
+            }
+            .login-form{
+                text-align: center;
+                padding-bottom: 10px;
+                .login-forget{
+                    color: #080404;
+                    text-align: right;
+                    margin: 8px 0;
+                    margin-right: 80px;
+                    margin-top: -22px;
+                    span{
+                        cursor: pointer;
+                    }
+                }
+                .login-forget span:hover{
+                    color: #1b9ea2;
+                }
+                .ant-form-item{
+                    margin-bottom: 30px;
+                }
+                .ant-form-explain{
+                    text-align: left;
+                    margin-left: 80px;
+                    margin-top: 6px;
+                }
+                .acount-phone,.reset-form-button{
+                    width:260px;
+                    box-sizing: border-box;
+                    height: 34px;
+                    border-radius: 3px;
+                    color:#b4b4b4;
+                    font-size: 14px;
+                    outline: none;
+                }
+                .ant-input-affix-wrapper .ant-input:not(:first-child){
+                    padding-left: 30px;
+                }
+                .c2m-forgot-test{
+                    color: #1b9ea2;
+                    font-size: 19px;
+                    position: absolute;
+                    top: 2px;
+                    left:28px;
+                }
+                .c2m-sign-number,.c2m-sign-password{
+                    color: #1b9ea2;
+                    font-size: 19px;
+                    position: absolute;
+                }
+                .login-vercode{
+                    display: flex;
+                    flex-direction: row;
+                    .inpt-code{
+                        height: 34px;
+                        padding-left: 28px;
+                        font-size: 14px;
+                        color: #b4b4b4;
+                        width: 144px;
+                        margin-left: 50px;
+                    }
+                    .login-vercode-pic{
+                        height: 34px;
+                        margin-left: 60px;
+                        width: 85px;
+                        img{
+                            height: 34px;
+                            width: 85px;
+                        }
+                    }
+                }
+                .reset-form-button{
+                    background-color:#2ab0b4;
+                    border: none;
+                    color: #fff;
+                }
+                
+            }
+            .company-list{
+                overflow: auto;
+                height: 204px;
+                width: 247px;
+                margin: 0 auto;
+                padding: 15px 0;
+                padding-left: 28px;
+                .company-item{
+                    font-size: 14px;
+                    color: #080404;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+                    position: relative;
+                    .c2m-enter{
+                        display: none;
+                    }
+                }
+                .company-item:hover{
+                    .c2m-enter{
+                        display: block;
+                        &:before{
+                            color: #0fc0c5;
+                            font-size: 23px;
+                            position: absolute;
+                            left: -26px;
+                            top: -4px;
+                        }
+                    }
+                }
+            }
+            .company-back{
+                margin-top: 25px;
+                padding-bottom: 30px;
+                text-align: right;
+                margin-right: 87px;
+                font-size: 12px;
+                color: #080404;
+                cursor: pointer;
+            }
+            .company-back:hover{
+                color: #0fc0c5;
+            }
+
+        }
+    }
+}

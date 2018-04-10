@@ -1,0 +1,5 @@
+{
+  "title":"登陆",
+  "filename":"login.html",
+  "template": "./src/template/baiduMap.html"
+}

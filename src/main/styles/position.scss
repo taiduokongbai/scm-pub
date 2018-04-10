@@ -1,0 +1,51 @@
+.ew-layout-content {
+    .position-content {
+        .position-head {
+            line-height: 70px;
+            .ant-input-affix-wrapper {
+                .ant-input {
+                    height: 30px;
+                }
+            }
+            .btn-add {
+                float: right;
+                margin-top: 20px;
+                width: 72px;
+                height: 30px;
+                background: #4c80cf;
+            }
+        }
+        .position-body {
+            .operator-color .c2mfont {
+                border: 1px solid #9D9D9D;
+                border-radius: 50%;
+                color: #9D9D9D;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .operator-color .c2mfont:hover {
+                color: #fff;
+                background-color: #4c80cf;
+                border-color: #4c80cf;
+            }
+        }
+    }
+}
+
+.ant-modal-body {
+    .position-add {
+        .ant-form-item {
+            margin-bottom: 20px;
+            .ant-form-item-label {
+                .label {
+                    color: #4a4a4a;
+                }
+            }
+        }
+        .ant-form-item:last-child {
+            .ant-form-item-control {
+                width: 300px;
+            }
+        }
+    }
+}

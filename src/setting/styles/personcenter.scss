@@ -1,0 +1,261 @@
+/*.personal-content{
+    background: #FFFFFF;
+    border-radius: 3px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    min-height: 600px;
+    .personal-info{
+        height: 50px;
+        border-bottom: 1px solid #dfdfdf;
+        margin-left: 36px;
+        font-size: 14px;
+        line-height: 68px;
+        color: #2E435A ;
+        padding-left: 12px;
+        position: relative;
+        .title-line{
+            height: 15px;
+            position: absolute;
+            width: 3px;
+            background: #ff7629;
+            top: 26px;
+            left: 1px;
+            display: inline-block;
+        }  
+    }
+    .personal-base{
+        .base-info{
+            height: 50px;
+            left: 36px;
+            top: 84px;
+            font-size: 14px;
+            color: #2E435A ;
+            padding-left: 12px;
+            position: absolute;
+            top: 84px;
+        }
+        .bace-cont{
+            float: left;
+            position: absolute;
+            top: 118px;
+            left: 48px;
+            color: #4b4b4b;
+            font-size: 14px;
+            span{
+                margin-left: 20px;
+                width: 226px;
+                display: inline-block;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                cursor: pointer;
+                vertical-align: text-bottom;
+            }
+        }
+        .base-section{
+            left: 325px;
+        }
+        .base-position{
+            left: 605px;
+        }
+        .photo{
+            top: 74px;
+            right: 50px;
+            height: 80px;
+            width: 80px;
+            position: absolute;
+            display: block;
+            border: none;
+            text-align: center;
+            img{
+                height: 80px;
+                width: 80px;
+            }
+        }
+    }
+    .personal-account{
+        .account-info{
+            height: 50px;
+            border-bottom: 1px solid #dfdfdf;
+            margin-left: 36px;
+            font-size: 14px;
+            line-height: 68px;
+            color: #2E435A ;
+            padding-left: 12px;
+            position: relative;
+            margin-top: 120px;
+            .title-line{
+                height: 15px;
+                position: absolute;
+                width: 3px;
+                background: #ff7629;
+                top: 26px;
+                left: 1px;
+                display: inline-block;
+            }  
+        }
+        .account-phone{
+            float: left;
+            position: absolute;
+            top: 249px;
+            left: 36px;
+            color: #4b4b4b;
+            font-size: 14px;
+            span,a{
+                margin-left: 20px;
+            }
+        }
+        .password{
+            left: 325px;
+        }
+    } 
+}*/
+
+// UI 二次更新
+.ew-layout-setting{
+    background: #fff;
+    .ant-layout-content{
+        background:#fff;
+        .inner-content{
+            box-shadow: none;
+        }
+    }
+}
+.personal-content{
+    padding-top: 151px;
+    .photo{
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        .photo-box{
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            position: relative;
+            border: 1px solid #ccc;
+            img{
+                width: 80px;
+                height: 80px;
+            }
+            span{
+                display: block;
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                bottom: -5px;
+                right: -12px;
+                border-radius: 50%;
+                i{
+                    font-size: 24px;
+                    width: 24px;
+                    height: 24px;
+                    border: 1px solid #4c81cf;
+                    background: #4c81cf;
+                    border-radius: 50%;
+                    color: #fff;
+                }
+            }
+        }
+    }// end .photo
+    .personal-base{
+        padding-top: 29px;
+        text-align:center;
+        .personal-base-box{
+            border:1px solid #e4e4e4;
+            padding: 16px 50px;
+            display: inline-block;
+            >div.bace-cont:nth-child(1){
+                margin-top: 0;
+            }
+            >div.bace-cont{
+                margin-top: 13px;
+                display: flex;
+                flex-direction: row;
+                span:nth-child(1){
+                    display: inline-block;
+                    width: 36px;
+                    text-align: right;
+                    margin-right: 10px;
+                }
+                span:nth-child(2){
+                    max-width: 400px;
+                    text-align: left;
+                }
+            }
+            >div.bace-info{
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                >p{
+                    margin-top: 13px;
+                    text-align: left;
+                    span:nth-child(1){
+                        display: inline-block;
+                        width: 36px;
+                        text-align: right;
+                        margin-right: 10px;
+                    }
+                    span:nth-child(2){
+                        max-width: 400px;
+                        text-align: left;
+                        display: inline-block;
+                        width: 76px;
+                        margin-right: 20px;
+                    }
+                }
+                >p:nth-child(1){
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+
+//验证登录密码
+.bind-phone-next-step{
+    .ant-modal-content{
+        .ant-modal-footer{
+            padding: 0px 12px 30px 10px;
+        }
+    }
+}
+
+//修改密码
+//绑定手机
+.change-psw-submit,
+.bind-phone-modal{
+    .ant-modal-body{
+        .ant-spin-container{
+            .bind-phone{
+                .ant-form-item{
+                    margin: 0 0 20px 0;
+                    .ant-form-item-control-wrapper{
+                        height: 32px;
+                    }
+                }
+                .get-verification-code{
+                    border:1px solid #4c80cf;
+                    background-color: #fff;
+                    border-radius:2px;
+                    color: #4c80cf;
+                }
+                .get-verification-code[disabled]{
+                        color: #ccc;
+                        background-color: #f7f7f7;
+                        border-color: #d9d9d9;
+                }
+                .ant-form-item:nth-child(1){
+                    .ant-form-item-control-wrapper{
+                        .ant-form-item-control{
+                            #phoneNo{
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

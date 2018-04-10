@@ -1,0 +1,66 @@
+.member-addDialog-comp{
+    .ant-modal-body{
+        padding: 16px 20px;
+        padding-bottom: 0px;
+    }
+    .fixed-telephone{
+        width: 19%;
+         margin-left:5%;
+        .ant-form-item-control-wrapper{
+            width: 50%;
+        }
+        .ant-form-explain{
+            width: 72px;
+        }
+    }
+    .label-width-right{
+        .ant-form-item-label{
+            width: 18.55%;
+        }
+    }
+    .work-office{
+        .ant-form-item-label{
+            margin-left: 14px;
+        }
+        .ant-form-item-control-wrapper{
+            width: 74%;
+        }
+        .ant-form-item{
+            margin-bottom: 10px;
+        }
+    }
+    .ant-form-item{
+        margin-bottom: 20px;
+        .ant-form-item-label label:after{
+            margin: 0 10px 0 2px;
+        }
+    }
+    .ant-tabs-bar{
+        border-bottom: none;
+        margin-bottom: 24px;
+    }
+    .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab{
+        border: none;
+        background: #fff;
+        border-bottom: 1px solid #fff;
+        color: #999999;
+        margin-right: 16px;
+    }
+    .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active{
+        border-bottom: 1px solid #4c80cf;
+        color: #4c80cf;
+    }
+    .label-no-after{
+        .ant-form-item-label label:after{
+            color: #afafaf;
+        }
+    }
+    .add-new-address{
+        width: 15%;
+    }
+    .label-no-after{
+        .ant-form-item-label label:after{
+            margin: 0px 5px 0px 0px;
+        }
+    }
+}

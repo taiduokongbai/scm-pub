@@ -1,0 +1,53 @@
+.ew-layout-content{
+    .site-content {
+        .site-head{
+            line-height: 68px;
+            border-bottom: 2px solid #e5e8ec;
+            .ant-input-affix-wrapper{
+                margin-left: 20px;
+            }
+            .site-select{
+                .ant-select-selection{
+                    height: 30px
+                }
+            }
+            .ant-select{
+                margin: 0 20px;
+            }
+            .site-btns{
+                float: right;
+                margin-right: 20px;
+                .create-site-btn{
+                    margin-right: 20px;
+                    width: 72px;
+                    height: 30px;
+                    background: #4c80cf;
+                }
+            }
+        }
+        .site-body{
+            padding: 20px;
+            .ant-table-body{
+                .ant-table-thead > tr > th.handleCenter{
+                    padding-right: 10px;
+                }
+                .handleCenter{
+                    text-align: center
+                }
+                .columns-distribute{
+                    cursor: pointer;
+                    text-align: center;
+                    border: 1px solid #9a9a9a;
+                    border-radius: 100%;
+                    color: #4a4a4a;
+                }
+                .columns-distribute:hover {
+                    background-color: #4c80cf;
+                    color: #fff;
+                    border: 1px solid #4c80cf; 
+                }
+            }
+        }
+    }
+} 
+
